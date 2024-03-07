@@ -7,7 +7,7 @@ var configuration = builder.Configuration;
 
 builder.Services.AddControllersWithViews(
     options => { options.Conventions.Add(new RouteTokenTransformerConvention(new SlugifyParameterTransformer())); 
-    });
+});
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
